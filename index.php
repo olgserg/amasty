@@ -24,7 +24,7 @@ class King extends AbstractChessmen
 
 	public function move($x, $y)
 	{
-		if (($x < 3 || $x > 5) || ($y < 3 || $y > 5)) throw new Exception('No no no King!');
+		if (($x < 3 || $x > 5) || ($y < 3 || $y > 5)) throw new Exception('Error King');
 		$this->x=$x;
 		$this->y=$y;
 	}
@@ -39,7 +39,7 @@ class Queen extends AbstractChessmen
 
 	public function move($x, $y)
 	{
-		if (!($x <= 8 && $x == $y) || !($x = 4 && $y <= 8) || !($y = 4 && $x <= 8) || !($x <= 7 && $y = $x - 6)) throw new Exception('No no no Queen!');
+		if (!($x <= 8 && $x == $y) || !($x = 4 && $y <= 8) || !($y = 4 && $x <= 8) || !($x <= 7 && $y = $x - 6)) throw new Exception('Error Queen');
 		$this->x=$x;
 		$this->y=$y;
 	}
