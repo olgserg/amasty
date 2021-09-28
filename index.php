@@ -58,5 +58,5 @@ try {
 	echo $e->getMessage();
 }
 
-//$queen->getPosition();
-//$king->getPosition();
+$queen->getPosition();
+$king->getPosition();
